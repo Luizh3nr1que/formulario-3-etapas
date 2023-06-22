@@ -16,7 +16,7 @@ const etapaEmpresaNumber = document.querySelector('.etapaEmpresaNumber');
 
 nextContato.addEventListener('click', () => {
     if (empresa.style.display === 'none') {
-        // Verificar campos da primeira etapa
+
         const name = document.querySelector('#name').value;
         const telefone = document.querySelector('#telefone').value;
         const email = document.querySelector('#email').value;
@@ -77,7 +77,7 @@ const etapaProjetoNumber = document.querySelector('.etapaProjetoNumber');
 
 nextObjetivo.addEventListener('click', () => {
     if (objetivo.style.display === 'none') {
-        // Verificar campos da primeira etapa
+
         const nameEmpresa = document.querySelector('#nameEmpresa').value;
         const funcionarios = document.querySelector('#funcionarios').value;
         const textArea = document.querySelector('#textArea').value;
