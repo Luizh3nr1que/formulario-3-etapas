@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- fim css -->
+
+    <link rel="shortcut icon" href="icone/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Biblioteca normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Biblioteca normalize -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Luiz Henrique | Formulario</title>
+</head>
+
+<body>
+    <!-- erro -->
+    <div class="erro">Por favor preencha todos os dados</div>
+    <!-- fim do erro -->
+
+
+    <section class="container">
+
+        <!-- header -->
+        <div class="conteudo">
+            <div class="etapas">
+                <span class="spanEtapas activeSpan"><span class="number activeNumber">1</span> Contato <ion-icon
+                        name="chevron-forward-outline"></ion-icon></span>
+
+                <span class="spanEtapas etapaEmpresa"><span class="number etapaEmpresaNumber">2</span> Empresa <ion-icon
+                        name="chevron-forward-outline"></ion-icon></span>
+
+                <span class="spanEtapas etapaProjeto"><span class="number etapaProjetoNumber">3</span> Projeto <ion-icon
+                        name="chevron-forward-outline"></ion-icon></span>
+            </div>
+            <!-- fim do header -->
+
+
+            <!-- primeira etapa -->
+            <div class="contato">
+                <form>
+                    <label for="name">Nome</label>
+                    <input class="espaço" type="text" id="name" placeholder="digite seu nome">
+
+                    <label for="telefone">Telefone</label>
+                    <input class="espaço" type="number" id="telefone" placeholder="só números">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="digite seu email">
+                </form>
+
+                <button class="next" id="nextContato">Continuar</button>
+
+            </div>
+            <!-- fim da primeira etapa -->
+
+
+            <!-- segunda etapa -->
+            <div class="empresa" style="display: none;">
+                <form>
+                    <label for="nameEmpresa">Nome da empresa</label>
+                    <input class="espaço" type="text" id="nameEmpresa" placeholder="qual nome da empresa">
+
+                    <label for="funcionarios">Numero de Funcionarios</label>
+                    <input class="espaço" type="number" id="funcionarios" placeholder="quantos funcionarios">
+
+                    <label for="textArea">Sobre seu negócio</label>
+                    <textarea id="textArea" cols="30" rows="10"
+                        placeholder="fale um pouco sobre seu negócio"></textarea>
+                </form>
+
+                <button class="next" id="nextObjetivo">Continuar</button>
+                <button class="prev" id="prevContato">Voltar</button>
+
+            </div>
+            <!-- fim segunda etapa -->
+
+
+            <!-- terceira etapa  -->
+            <div class="objetivo" style="display: none;">
+                <form>
+                    <label for="objetivo">Obejetivo do Projeto</label>
+                    <textarea id="objetivo" cols="30" rows="10"
+                        placeholder="fale um pouco sobre o objtivo do projeto"></textarea>
+                </form>
+
+                <button class="next" id="concluirForm">Concluir</button>
+                <button class="prev" id="prevEmpresa">Voltar</button>
+
+            </div>
+            <!-- terceira etapa  -->
+
+
+            <!-- container de conclusao -->
+            <div class="concluirDiv" style="display: none;">
+
+            </div>
+            <!-- fim do container de conclusao -->
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--  | © Desenvolvido por luiz Henrique 🚀 -->
