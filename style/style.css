@@ -113,6 +113,13 @@ form textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.next:hover {
+    transition: .3s ease-in-out;
+    background-color: rgb(76, 0, 147);
+    letter-spacing: 1px;
 }
 
 .prev {
@@ -126,7 +133,13 @@ form textarea {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
 
+.prev:hover {
+    transition: .3s ease-in-out;
+    letter-spacing: 1px;
+    background-color: rgba(173, 173, 173, 0.373);
 }
 
 .erro {
