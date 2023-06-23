@@ -155,7 +155,7 @@ concluirForm.addEventListener('click', () => {
         //mostra o spin de carregamento
         spin.style.display = 'block';
 
-        //e por final e depois de 1s tira o spin ai mostra a mensagem que os dados foram enviados
+        //e por final e depois de 1.5s tira o spin ai mostra a mensagem que os dados foram enviados
         setTimeout(() => {
             spin.style.display = 'none';
             concluirDiv.style.display = 'block';

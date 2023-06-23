@@ -132,7 +132,7 @@ form textarea {
 .erro {
     background-color: red;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 18em;
     position: absolute;
     right: 20px;
