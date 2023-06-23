@@ -21,10 +21,11 @@ nextContato.addEventListener('click', () => {
         const telefone = document.querySelector('#telefone').value;
         const email = document.querySelector('#email').value;
 
+        //verificamos se os campos estao vazio
         if (name === '' || telefone === '' || email === '') {
             exibirErro();
             return;
-        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { //verificamos se e um email valido
             exibirErroEmail();
             return;
         } else {
