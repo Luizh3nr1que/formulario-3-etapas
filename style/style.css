@@ -23,15 +23,16 @@ body {
 }
 
 .conteudo {
-    border: 1px solid rgba(173, 173, 173, 0.664);
+    border: 1px solid rgb(173, 173, 173);
     width: 470px;
     height: 470px;
     padding: 25px;
     border-radius: 7px;
+    position: relative;
 }
 
 .etapas {
-    border-bottom: 1px solid rgba(173, 173, 173, 0.664);
+    border-bottom: 1px solid rgba(173, 173, 173, 0.791);
     width: 100%;
     height: 70px;
     display: flex;
@@ -166,9 +167,32 @@ form textarea {
     font-weight: bold;
     width: 350px;
     font-size: 20px;
+    position: absolute;
+    top: 8em;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 14em;
+    left: 12.8em;
+    animation: spin 1s infinite linear;
+    display: none;
+}
 
 @media screen and (max-width:379px) {
     .etapas {

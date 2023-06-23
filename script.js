@@ -126,6 +126,8 @@ prevEmpresa.addEventListener('click', () => {
 
 const concluirForm = document.querySelector('#concluirForm');
 
+const spin = document.querySelector('.spin');
+
 concluirForm.addEventListener('click', () => {
     const textAreaObjetivo = document.querySelector('#objetivo').value;
 
@@ -150,8 +152,14 @@ concluirForm.addEventListener('click', () => {
         //exibe o a div criada na tela 
         concluirDiv.appendChild(paragrafo);
 
-        //e por final mostra todo o conteudo do container
-        concluirDiv.style.display = 'block';
+        //mostra o spin de carregamento
+        spin.style.display = 'block';
+
+        //e por final e depois de 1s tira o spin ai mostra a mensagem que os dados foram enviados
+        setTimeout(() => {
+            spin.style.display = 'none';
+            concluirDiv.style.display = 'block';
+        }, 1500);
     }
 });
 
