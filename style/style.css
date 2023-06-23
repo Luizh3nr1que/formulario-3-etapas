@@ -29,6 +29,7 @@ body {
     padding: 25px;
     border-radius: 7px;
     position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.155);
 }
 
 .etapas {
@@ -198,7 +199,7 @@ form textarea {
     width: 50px;
     height: 50px;
     border: 3px solid #ccc;
-    border-top: 2px solid rgb(104, 0, 201);
+    border-top: 2px solid black;
     border-radius: 50%;
     position: absolute;
     top: 14em;
