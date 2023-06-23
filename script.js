@@ -21,9 +21,11 @@ nextContato.addEventListener('click', () => {
         const telefone = document.querySelector('#telefone').value;
         const email = document.querySelector('#email').value;
 
-
         if (name === '' || telefone === '' || email === '') {
             exibirErro();
+            return;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            exibirErroEmail();
             return;
         } else {
 
