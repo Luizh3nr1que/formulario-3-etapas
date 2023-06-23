@@ -169,6 +169,32 @@ form textarea {
     }
 }
 
+.erroEmail {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 18em;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    animation: slideEmail .5s linear forwards;
+}
+
+@keyframes slideEmail {
+    from {
+        right: 700px;
+    }
+
+    to {
+        right: 20px;
+    }
+}
+
 
 .textoEnviado {
     color: rgb(4, 4, 4);

@@ -25,6 +25,9 @@ nextContato.addEventListener('click', () => {
         if (name === '' || telefone === '' || email === '') {
             exibirErro();
             return;
+        } else if (!/\S+@\S+\.\S+/.test(email.value)) {
+            exibirErroEmail();
+            return;
         } else {
 
             // Div contato fica none e mostra a div empresa
@@ -170,5 +173,14 @@ function exibirErro() {
 
     setTimeout(() => {
         erro.style.display = 'none';
+    }, 5000)
+}
+
+function exibirErroEmail() {
+    const erroEmail = document.querySelector('.erroEmail');
+    erroEmail.style.display = 'flex';
+
+    setTimeout(() => {
+        erroEmail.style.display = 'none';
     }, 5000)
 }
